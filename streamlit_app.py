@@ -1,3 +1,3 @@
 import streamlit
 
-streamlit.title('My sone has very good day today!!')
+streamlit.title('My son has very good day today!!')
