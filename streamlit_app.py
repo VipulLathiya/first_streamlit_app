@@ -18,4 +18,4 @@ import requests
 streamlit.header("Fruityvice Fruit Advice!")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 fruityvice_normalised = pandas.json_normalise(fruityvice_response.json())
-streamlit.dataframe(fruityvice_normalised.json())
+streamlit.dataframe(fruityvice_normalised)
