@@ -35,8 +35,8 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 
 def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
-      my_cur.execute("SELECT * from fruit_load_list")
-      retun (my_cur.fetchall())
+       my_cur.execute("SELECT * from fruit_load_list")
+       retun my_cur.fetchall()
 
 if streamlit.button('get fruit load list'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
