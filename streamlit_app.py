@@ -33,7 +33,7 @@ fruit_choice = streamlit.text_input('What fruit would you like information about
 streamlit.write('The user entered ', fruit_choice)
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
-def get_fruit_load_list()
+def get_fruit_load_list():
   with my_cnx.cursor() as my_cur:
       my_cur.execute("SELECT * from fruit_load_list")
       retun (my_cur.fetchall())
